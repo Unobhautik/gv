@@ -54,14 +54,14 @@ const EventDetails = () => {
         <EventCard 
           icon={<Clock className="h-10 w-10 text-accent" />}
           title="Time"
-          details="6:00 PM onwards"
+          details="6:30 PM onwards"
           variants={itemVariants}
         />
         
         <EventCard 
           icon={<MapPin className="h-10 w-10 text-accent" />}
           title="Venue"
-          details="Zesty Treat Restaurant and Banquets"
+          details="Foodista 2 Koyali, Vadodara"
           variants={itemVariants}
         />
       </motion.div>
@@ -75,8 +75,8 @@ const EventDetails = () => {
       >
         <h3 className="font-dancing text-2xl text-primary mb-2">Program</h3>
         <ul className="max-w-md mx-auto space-y-2 text-muted-foreground">
-          <li className="border-b border-silver-dark/20 pb-2">6:00 PM - Arrival & Welcome Drinks</li>
-          <li className="border-b border-silver-dark/20 pb-2">7:00 PM - Anniversary Ceremony</li>
+          <li className="border-b border-silver-dark/20 pb-2">7:00 PM - Arrival & Welcome Drinks</li>
+          <li className="border-b border-silver-dark/20 pb-2">7:30 PM - Anniversary Ceremony</li>
           <li className="border-b border-silver-dark/20 pb-2">8:00 PM - Dinner Service</li>
           <li>9:00 PM - Dancing & Celebrations</li>
         </ul>
@@ -94,7 +94,7 @@ const EventDetails = () => {
             <h3 className="font-playfair text-xl text-primary mb-4 text-center">Location Map</h3>
             <div className="aspect-video w-full rounded-md overflow-hidden">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8833775305993!2d73.15703507532562!3d22.320249942171976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc89149f7abf5%3A0xe9c5033bdc605ba9!2sZesty%20Treat%20Restaurant%20and%20Banquet_%20Best%20Veg%20Restaurant%2C%20Banquet%20Hall!5e0!3m2!1sen!2sin!4v1744872510611!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.0124079516513!2d73.11824367532654!3d22.353160340977137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc954f6675fa5%3A0xc33b1a83cd26e5c5!2sFoodista%202!5e0!3m2!1sen!2sin!4v1744883934509!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
