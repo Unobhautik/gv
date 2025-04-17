@@ -1,0 +1,126 @@
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff5f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f9a8d4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
+
+/* Hide scrollbar for mobile devices */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+/* Hide horizontal scrollbar for nav bar */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+/* Animation for heart beating */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  10% { transform: scale(1.1); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.1); }
+  40% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+/* New animation for an interactive element */
+@keyframes float-rotate {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.animate-float-rotate {
+  animation: float-rotate 4s ease-in-out infinite;
+}
+
+/* Gradient animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Interactive elements */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(249, 168, 212, 0.7);
+  transform: translateY(-5px);
+}
+
+/* Text gradient for pink theme */
+.text-gradient-pink {
+  background: linear-gradient(90deg, #f472b6 0%, #ec4899 50%, #db2777 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Remove default outlines while keeping accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(249, 168, 212, 0.3);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(249, 168, 212, 0.5);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
